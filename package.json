@@ -7,10 +7,19 @@
   "scripts": {
     "start": "node server.js"
   },
-  "name": "test2",
+  "name": "test3",
   "version": "1.0.0",
   "main": "server.js",
   "author": "Aziz Nosirov",
   "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aziz-Nosirov223/bti325_test2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aziz-Nosirov223/bti325_test2/issues"
+  },
+  "homepage": "https://github.com/Aziz-Nosirov223/bti325_test2#readme",
   "description": ""
 }

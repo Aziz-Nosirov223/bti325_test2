@@ -1,0 +1,13 @@
+<div>
+    {{#if student}}
+    <div>
+        <h2>{{student.studId}} {{student.name}} {{student.program}} {{student.gpa}}</h2>
+        
+    </div>
+    {{/if}}
+    {{#unless student}}
+    <div>
+        <h3><strong>{{message}}</strong></h3>
+    </div>
+    {{/unless}}
+</div>

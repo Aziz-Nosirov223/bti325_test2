@@ -1,6 +1,7 @@
 const fs = require('fs');
 let students = [];
 let CPA_students = [];
+let all_students = [];
 let highestGPAStudent = [];
 module.exports.prepare = function() {
     return new Promise((resolve, reject) => {
@@ -16,6 +17,22 @@ module.exports.prepare = function() {
         });
     })
 };
+
+module.exports.allStudents = () => {
+    return new Promise((resolve, reject) => {
+
+        for (let i = 0; i < students.length; i++) {
+            all_students.push(students[i])
+            
+        }
+
+        if (all_students.length == 0) {
+            reject("no results returned")
+        }
+
+        resolve(all_students)
+    })
+}
 
 module.exports.getCPA = () => {
     
